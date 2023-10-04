@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> box model, margin and padding in css</title>
+    <style>
+
+        body{
+            background-color: rgb(222, 235, 244);
+        }
+
+        *{ /*  'star' (*) this is a universal selector*/
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container{
+            background-color: rgb(214, 206, 214);
+            border: 3px solid rgb(72, 8, 114);
+            /* we can set margin/paddinfg for top, bottom, left, and right like this */
+
+            /* padding-top: 79px;
+            padding-bottom: 89px; 
+            padding-left: 34px; */
+
+         padding: 23px 48px 67px 66px;   /* padding: top right bottom left; */
+        padding: 34px 19px !important; /*  padding: x,y  */
+        margin: 40px 19px;
+        border-radius: 23px;
+        width: 533px;
+        box-sizing: border-box; /*this property allows you keep the width as is and doesnt allow it to change the actual given width when u change other things */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sit. Enim iure quis maxime dolore, laboriosam reiciendis ipsa nulla necessitatibus non </p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sit. Enim iure quis maxime dolore, laboriosam reiciendis ipsa nulla necessitatibus non </p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sit. Enim iure quis maxime dolore, laboriosam reiciendis ipsa nulla necessitatibus non </p>
+    </div>
+</body>
+</html>
